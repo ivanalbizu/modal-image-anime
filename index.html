@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modal</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <svg display="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="svg-icon-close" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" id=".5786439775930057" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18M6 6l12 12"></path>
+        </symbol>
+    </svg>
+
+    <div class="img-wrapper">
+        <img src="https://dummyimage.com/800x500/444/fff" data-modal="1" alt="">
+    </div>
+    <div class="img-wrapper">
+        <img src="https://dummyimage.com/800x400/666/fff" data-modal="2" alt="">
+    </div>
+    <div class="img-wrapper">
+        <img src="https://dummyimage.com/600x400/555/fff" data-modal="3" alt="">
+    </div>
+
+    <div class="md" id="modal-1">
+        <div class="md-image"></div>
+        <div class="md-content">
+            <header class="md-header">
+                <h2 class="md-title">Modal 01</h2>
+                <button class="md-close" type="button">
+                    <svg class="svg-icon-close">
+                        <use xlink:href="#svg-icon-close" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                    </svg>
+                </button>
+            </header>
+            <div class="md-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur soluta, asperiores consequatur libero suscipit doloribus! Quidem deleniti nemo veritatis, ratione et totam maxime illo optio quaerat, perferendis, quos labore repellendus.</p>
+                <p>Aspernatur soluta, asperiores consequatur libero suscipit doloribus! Quidem deleniti nemo veritatis, ratione et totam maxime illo optio.</p>
+            </div>
+            <footer class="md-footer">
+                <a class="md-link" href="#">Go to</a>
+                <a class="md-link" href="#">Go to</a>
+                <button class="md-button" type="button">Action</button>
+            </footer>
+        </div>
+    </div>
+    <div class="md" id="modal-2">
+        <div class="md-image"></div>
+        <div class="md-content">
+            <header class="md-header">
+                <h2 class="md-title">Modal 02</h2>
+                <button class="md-close" type="button">
+                    <svg class="svg-icon-close">
+                        <use xlink:href="#svg-icon-close" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                    </svg>
+                </button>
+            </header>
+            <div class="md-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur soluta, asperiores consequatur libero suscipit doloribus! Quidem deleniti nemo veritatis, ratione et totam maxime illo optio quaerat, perferendis, quos labore repellendus.</p>
+            </div>
+        </div>
+    </div>
+    <div class="md" id="modal-3">
+        <div class="md-image"></div>
+        <div class="md-content">
+            <header class="md-header">
+                <h2 class="md-title">Modal 03</h2>
+                <button class="md-close" type="button">
+                    <svg class="svg-icon-close">
+                        <use xlink:href="#svg-icon-close" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                    </svg>
+                </button>
+            </header>
+            <div class="md-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur soluta, asperiores consequatur libero suscipit doloribus! Quidem deleniti nemo veritatis, ratione et totam maxime illo optio quaerat, perferendis, quos labore repellendus.</p>
+                <p>Aspernatur soluta, asperiores consequatur libero suscipit doloribus! Quidem deleniti nemo veritatis, ratione et totam maxime illo optio.</p>
+            </div>
+            <footer class="md-footer">
+                <a class="md-link" href="#">Go to</a>
+                <button class="md-button" type="button">Action</button>
+            </footer>
+        </div>
+    </div>
+    
+    <div class="md-overlay"></div>
+</body>
+</html>
